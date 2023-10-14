@@ -22,4 +22,15 @@ Scripts and Tips for Kali Linux Pi-Tail Edition
   * Consider carrying an portable external keyboard
 * [GPSd Client /  Forwarder](https://play.google.com/store/apps/details?id=io.github.tiagoshibata.gpsdclient&hl=en_US&gl=US)
   * Sends your phone's GPS data to a UDP listener on Kali Pi-Tail
-  * Enables wardriving without a hardware GPS Receiver on the Pi
+  * Enables wardriving without a hardware GPS Receiver on the Pialfa-mon.sh
+# Included Scripts
+* alfa.sh
+  * Loads 8821au kernel module and brings up wlan1 in normal mode (no IP address) 
+* alfa-mon.sh
+  * Loads 8821au kernel module and brings up wlan1 in monitor mode for kismet, wifite, aircrack-ng, etc
+* kismet.sh
+  * Starts a GPSd server listening for the Android GPSd Forwarder session, and launches Kismet on wlan1
+* ktow.sh
+  * Kismet-To-Wigle: convert .kismet log files to CSV files you can upload to WiGLE
+* wigle-upload.sh
+  * A fully-CLI-driven WiGLE uploader. Requires WiGLE API keys. Instructions in file comments
