@@ -1,4 +1,4 @@
-# pital-stuph
+# pitail-stuph
 Scripts and Tips for Kali Linux Pi-Tail Edition
 
 # Documentation
