@@ -34,3 +34,5 @@ Scripts and Tips for Kali Linux Pi-Tail Edition
   * Kismet-To-Wigle: convert .kismet log files to CSV files you can upload to WiGLE
 * wigle-upload.sh
   * A fully-CLI-driven WiGLE uploader. Requires WiGLE API keys. Instructions in file comments
+* pi-announce/  
+  * Send a push notifications to your phone with your headless Pi's IP address info (uses Pushover and systemd hooks)
