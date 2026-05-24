@@ -7,7 +7,7 @@ Scripts and Tips for Kali Linux Pi-Tail Edition
 
 # Drivers and Downloads
 * [All Raspberry Pi Kali Editions](https://www.kali.org/get-kali/#kali-arm)
-* [8821au](https://github.com/morrownr/8812au-20210629) driver for Alfa AWUS036ACS and similar USB adapters, enables monitor and packet injection mode
+* [8821au](https://github.com/aircrack-ng/rtl8812au) Aircrack-NG fork of Alfa AWUS036ACS/etc driver, enables monitor and packet injection mode
 
 # Android Apps
 * [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot&hl=en_US&gl=US&pli=1)
@@ -23,7 +23,7 @@ Scripts and Tips for Kali Linux Pi-Tail Edition
 * [GPSd Client /  Forwarder](https://play.google.com/store/apps/details?id=io.github.tiagoshibata.gpsdclient&hl=en_US&gl=US)
   * Sends your phone's GPS data to a UDP listener on Kali Pi-Tail
   * Enables wardriving without a hardware GPS Receiver on the Pialfa-mon.sh
-# Included Scripts
+# Included Scripts/Files
 * alfa.sh
   * Loads 8821au kernel module and brings up wlan1 in normal mode (no IP address) 
 * alfa-mon.sh
@@ -36,3 +36,7 @@ Scripts and Tips for Kali Linux Pi-Tail Edition
   * A fully-CLI-driven WiGLE uploader. Requires WiGLE API keys. Instructions in file comments
 * pi-announce/  
   * Send a push notifications to your phone with your headless Pi's IP address info (uses Pushover and systemd hooks)
+* build-88XXau.sh
+  * Lightweight howto for the Alfa mini-ACS adapter drivers on PiTail. Not really meant to be run as a script, but it's a list of commands with some comments
+* boot/
+  * Stubbed/modded wpa_supplicant and interfaces files that support DHCP instead of static

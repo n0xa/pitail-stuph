@@ -1,8 +1,9 @@
 #!/bin/sh
-# Loads the 8821au kernel module and enables monitor mode. 
+# Loads the 88XXau kernel module and enables monitor mode.
+# Module options now baked into modprobe.d during 88XXau installation steps
 # Tested with Alfa AWUS036ACS mini AC600 adapter
 
-modprobe 8821au options rtw_drv_log_level=1 rtw_led_ctrl=1 rtw_vht_enable=1 rtw_power_mgnt=1
+modprobe 88XXau 
 iw dev wlan1 set type monitor
 ip link set wlan1 up
 iw wlan1 set txpower fixed 3000
